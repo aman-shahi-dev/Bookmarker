@@ -38,7 +38,7 @@ export const Login = () => {
   return (
     <div className="flex w-full max-w-2xl flex-1 flex-col rounded-2xl border border-neutral-700 md:flex-row">
       <div className="relative w-full md:w-1/2">
-        <div className="absolute flex w-full animate-pulse tracking-wide text-yellow-400 items-center justify-center py-4 text-xl md:py-6 md:text-2xl">
+        <div className="absolute flex w-full animate-pulse tracking-wide text-text items-center justify-center py-4 text-xl md:py-6 md:text-2xl">
           Login
         </div>
         <img
@@ -48,7 +48,7 @@ export const Login = () => {
         />
       </div>
       <div className="flex flex-1 flex-col items-center justify-center rounded-2xl rounded-t-none p-4 md:rounded-t-2xl md:rounded-l-none">
-        <h1 className="mb-4 text-lg text-yellow-400 md:mb-10 md:text-2xl">
+        <h1 className="mb-4 text-lg text-text md:mb-10 md:text-2xl">
           Fill the details below
         </h1>
 
@@ -63,7 +63,7 @@ export const Login = () => {
             type="email"
             placeholder="Email"
             required
-            className="w-full rounded-full bg-yellow-400 px-6 py-2 text-black transition duration-300 placeholder:text-neutral-500 focus:scale-103 focus:shadow-[0px_0px_20px_rgba(255,255,255,1)] focus:outline-none"
+            className="w-full rounded-full bg-btn px-6 py-2 text-black transition duration-300 placeholder:text-neutral-500 focus:scale-103 focus:shadow-[0px_0px_20px_rgba(255,255,255,1)] focus:outline-none"
           />
           <input
             name="password"
@@ -72,22 +72,22 @@ export const Login = () => {
             type="password"
             placeholder="Password"
             required
-            className="w-full rounded-full bg-yellow-400 px-6 py-2 text-black transition duration-300 placeholder:text-neutral-500 focus:scale-103 focus:shadow-[0px_0px_20px_rgba(255,255,255,1)] focus:outline-none focus:not-placeholder-shown:font-extrabold"
+            className="w-full rounded-full bg-btn px-6 py-2 text-black transition duration-300 placeholder:text-neutral-500 focus:scale-103 focus:shadow-[0px_0px_20px_rgba(255,255,255,1)] focus:outline-none focus:not-placeholder-shown:font-extrabold"
           />
           <button
             type="submit"
-            className="mx-auto mt-2 w-fit text-black cursor-pointer rounded-full bg-yellow-400 px-6 py-2 transition duration-300 hover:bg-yellow-500 active:scale-95 md:mt-4"
+            className="mx-auto mt-2 w-fit text-black cursor-pointer rounded-full bg-btn px-6 py-2 transition duration-300 hover:bg-hover active:scale-95 md:mt-4"
           >
             {loading ? "Logging in..." : "Login"}
           </button>
         </form>
         <div className="mt-4 flex w-full items-center justify-center gap-4 md:mt-6">
-          <h1 className="text-sm text-yellow-400 md:text-lg">
+          <h1 className="text-sm text-text md:text-lg">
             Don't have an account?
           </h1>
           <Link
             to="/signup"
-            className="rounded-full bg-yellow-400 px-4 py-2 text-sm text-black transition duration-300 hover:bg-yellow-500 active:scale-95"
+            className="rounded-full bg-btn px-4 py-2 text-sm text-black transition duration-300 hover:bg-hover active:scale-95"
           >
             Sign Up
           </Link>

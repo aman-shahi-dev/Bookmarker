@@ -7,7 +7,7 @@ import { SpeedInsights } from "@vercel/speed-insights/react";
 
 export const Layout = () => {
   return (
-    <div className="font-inter flex h-screen w-full flex-col overflow-hidden bg-[#1A1A1A] text-white">
+    <div className="font-inter bg-background flex h-screen w-full flex-col overflow-hidden text-white">
       <Analytics />
       <SpeedInsights />
       <Navbar />

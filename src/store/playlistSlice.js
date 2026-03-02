@@ -22,7 +22,13 @@ export const generateAndSavePlaylist = createAsyncThunk(
     );
 
     const title = response.data.items[0].snippet.title;
-    const thumbnail = response.data.items[0].snippet.thumbnails.default.url;
+    const thumbnails = response.data.items[0].snippet.thumbnails;
+    const thumbnail = (
+      thumbnails.maxres ||
+      thumbnails.high ||
+      thumbnails.medium ||
+      thumbnails.default
+    ).url;
     const description = response.data.items[0].snippet.description;
 
     const result = await playlistService.savePlaylist({

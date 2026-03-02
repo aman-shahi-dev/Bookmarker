@@ -5,8 +5,9 @@ import {
   fetchPlaylistVideos,
   resetActivePlaylist,
 } from "../store/playlistSlice";
+import { IconArrowLeft } from "@tabler/icons-react";
 
-export const PlaylistDetail = () => {
+export const PlaylistDetail = ({ playlistName }) => {
   const { playlistId } = useParams();
   const dispatch = useDispatch();
   const { activeVideos, loading, error } = useSelector(
@@ -20,15 +21,15 @@ export const PlaylistDetail = () => {
 
   return (
     <div className="flex h-full w-full flex-col">
-      <h1 className="p-2 text-center text-lg font-bold tracking-tight md:text-xl">
-        Playlist Name
+      <h1 className="p-4 text-center text-lg font-bold tracking-tight md:text-xl">
+        {playlistName || "Playlist Name"}
       </h1>
       <hr className="border-neutral-600" />
-      <div className="flex h-full flex-wrap items-center justify-start gap-6 overflow-y-auto p-4">
+      <div className="grid grid-cols-1 gap-4 overflow-y-auto p-4 md:grid-cols-3 md:gap-6 lg:grid-cols-4">
         {activeVideos.map((video, idx) => (
           <div
             key={video.title || idx}
-            className="mx-auto flex h-80 w-80 flex-col items-center justify-start rounded-xl border border-neutral-700 shadow-[0px_0px_10px_rgba(255,255,255,0.1)] md:h-100 md:w-100"
+            className="flex h-80 w-full flex-col items-center justify-start rounded-xl border border-neutral-700 shadow-[0px_0px_10px_rgba(255,255,255,0.1)]"
           >
             <div className="h-2/3 w-full rounded-xl">
               <img

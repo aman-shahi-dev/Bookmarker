@@ -2,6 +2,8 @@
 
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --font-nabla: "Nabla";
   --font-inter: "Inter", sans-serif;
@@ -9,5 +11,24 @@
   --font-manrope: "Manrope", sans-serif;
   --font-jost: "Jost", sans-serif;
   --font-mona: "Mona", sans-serif;
+
+  --color-background: #1a1a1a;
+  --color-navbar:#2A2A2A;
+  --color-footer: #2A2A2A;
+  --color-text: #facc15;
+  --color-btn: #facc15;
+  --color-hover: #eab308;
+  --color-red-op: ;
+  --color-red-op-hover: ;
 }
 
+.dark {
+  --color-background: #1a1a1a;
+  --color-navbar:#2A2A2A;
+  --color-footer: #2A2A2A;
+  --color-text: #facc15;
+  --color-btn: #facc15;
+  --color-hover: #eab308;
+  --color-red-op: ;
+  --color-red-op-hover: ;
+}

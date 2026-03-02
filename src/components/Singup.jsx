@@ -64,7 +64,7 @@ export const Signup = () => {
             type="text"
             placeholder="Name"
             required
-            className="w-full rounded-full bg-yellow-400 px-6 py-2 text-black transition duration-300 placeholder:text-neutral-500 focus:scale-103 focus:shadow-[0px_0px_20px_rgba(255,255,255,1)] focus:outline-none"
+            className="w-full rounded-full bg-btn px-6 py-2 text-black transition duration-300 placeholder:text-neutral-500 focus:scale-103 focus:shadow-[0px_0px_20px_rgba(255,255,255,1)] focus:outline-none"
           />
           <input
             name="email"
@@ -73,7 +73,7 @@ export const Signup = () => {
             type="email"
             placeholder="Email"
             required
-            className="w-full rounded-full bg-yellow-400 px-6 py-2 text-black transition duration-300 placeholder:text-neutral-500 focus:scale-103 focus:shadow-[0px_0px_20px_rgba(255,255,255,1)] focus:outline-none"
+            className="w-full rounded-full bg-btn px-6 py-2 text-black transition duration-300 placeholder:text-neutral-500 focus:scale-103 focus:shadow-[0px_0px_20px_rgba(255,255,255,1)] focus:outline-none"
           />
           <input
             name="password"
@@ -82,11 +82,11 @@ export const Signup = () => {
             type="password"
             placeholder="Password"
             required
-            className="w-full rounded-full bg-yellow-400 px-6 py-2 text-black transition duration-300 placeholder:text-neutral-500 focus:scale-103 focus:shadow-[0px_0px_20px_rgba(255,255,255,1)] focus:outline-none focus:not-placeholder-shown:font-extrabold"
+            className="w-full rounded-full bg-btn px-6 py-2 text-black transition duration-300 placeholder:text-neutral-500 focus:scale-103 focus:shadow-[0px_0px_20px_rgba(255,255,255,1)] focus:outline-none focus:not-placeholder-shown:font-extrabold"
           />
           <button
             type="submit"
-            className="mx-auto mt-2 w-fit cursor-pointer rounded-full bg-yellow-400 px-6 py-2 text-black transition duration-300 hover:bg-yellow-500 active:scale-95 md:mt-4"
+            className="mx-auto mt-2 w-fit cursor-pointer rounded-full bg-btn px-6 py-2 text-black transition duration-300 hover:bg-hover active:scale-95 md:mt-4"
           >
             {loading ? "Creating Account..." : "Sign Up"}
           </button>
@@ -97,7 +97,7 @@ export const Signup = () => {
           </h1>
           <Link
             to="/login"
-            className="rounded-full bg-yellow-400 px-4 py-2 text-sm text-black transition duration-300 hover:bg-yellow-500 active:scale-95"
+            className="rounded-full bg-btn px-4 py-2 text-sm text-black transition duration-300 hover:bg-hover active:scale-95"
           >
             Login
           </Link>

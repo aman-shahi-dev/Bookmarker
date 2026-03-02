@@ -16,14 +16,14 @@ export const Home = () => {
     <div className="flex flex-1 flex-col items-center justify-start">
       {status ? (
         <>
-          <h1 className="mt-20 mb-6 text-2xl font-bold tracking-tight text-yellow-400 md:text-6xl">
+          <h1 className="mt-20 mb-6 text-2xl font-bold tracking-tight text-text md:text-6xl">
             Welcome {userData?.name.split(" ")[0]} !
           </h1>
           <PlaylistActions />
         </>
       ) : (
         <>
-          <h1 className="mt-35 mb-6 text-2xl font-bold tracking-tight text-yellow-400 text-shadow-lg md:text-6xl">
+          <h1 className="mt-35 mb-6 text-2xl font-bold tracking-tight text-text text-shadow-lg md:text-6xl">
             Stop Scrolling. Start Learning
           </h1>
           <h2 className="mt-2 max-w-xl px-10 text-center text-lg tracking-tight text-neutral-400 md:text-xl">
@@ -33,7 +33,7 @@ export const Home = () => {
           </h2>
           <Link
             to="/signup"
-            className="mt-10 rounded-full bg-yellow-400 bg-linear-to-br px-6 py-2 text-xl text-black transition duration-300 hover:bg-yellow-500 active:scale-95 md:px-10 md:py-4 md:text-2xl"
+            className="mt-10 rounded-full bg-btn bg-linear-to-br px-6 py-2 text-xl text-black transition duration-300 hover:bg-hover active:scale-95 md:px-10 md:py-4 md:text-2xl"
           >
             Try it now
           </Link>

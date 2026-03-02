@@ -37,26 +37,26 @@ export const Navbar = () => {
   };
 
   return (
-    <div className="sticky top-0 z-50 flex w-full items-center justify-between gap-6 border-b border-neutral-700 bg-[#2A2A2A] px-4 py-3">
-      <Link to="/" className="text-xl font-bold text-yellow-400 md:text-2xl">
+    <div className="bg-navbar sticky top-0 z-50 flex w-full items-center justify-between gap-6 border-b border-neutral-700 px-4 py-3">
+      <Link to="/" className="text-text text-xl font-bold md:text-2xl">
         Bookmarker
       </Link>
 
       {loading ? (
-        <div className="h-8 w-24 animate-pulse rounded-full bg-neutral-800"></div>
+        <div className="h-8 w-24 animate-pulse rounded-full bg-navbar"></div>
       ) : status ? (
         <div className="flex items-center justify-center gap-4">
           <div className="relative" ref={profileDropdownRef}>
             <div
               onClick={() => setShowProfile((prev) => !prev)}
-              className="flex cursor-pointer flex-col rounded-full bg-yellow-400 p-2 text-black hover:bg-yellow-500 active:scale-98"
+              className="bg-btn hover:bg-hover flex cursor-pointer flex-col rounded-full p-2 text-black active:scale-98"
             >
               <IconUser size={24} />
             </div>
             {showProfile && (
               <div
                 onClick={(e) => e.stopPropagation()}
-                className="absolute top-12 right-0 z-50 min-w-50 rounded-lg border border-neutral-700 bg-yellow-400 p-2 text-black shadow-2xl select-auto"
+                className="bg-btn absolute top-12 right-0 z-50 min-w-50 rounded-lg border border-neutral-700 p-2 text-black shadow-2xl select-auto"
               >
                 <h1 className="text-md text-center font-bold underline md:text-xl">
                   Account
@@ -72,7 +72,7 @@ export const Navbar = () => {
           </div>
           <button
             onClick={handleLogout}
-            className="cursor-pointer rounded-full bg-red-500 p-2 select-none hover:bg-red-700 active:scale-95"
+            className="bg-red-op hover:bg-red-op-hover` cursor-pointer rounded-full p-2 select-none active:scale-95"
           >
             <IconLogout size={24} />
           </button>
@@ -81,13 +81,13 @@ export const Navbar = () => {
         <div className="flex items-center justify-evenly gap-4">
           <Link
             to="/login"
-            className="rounded-full bg-yellow-400 px-4 py-1 text-black transition duration-300 hover:bg-yellow-500 active:scale-95"
+            className="bg-btn hover:bg-hover rounded-full px-4 py-1 text-black transition duration-300 active:scale-95"
           >
             Login
           </Link>
           <Link
             to="/signup"
-            className="rounded-full bg-yellow-400 px-4 py-1 text-black transition duration-300 hover:bg-yellow-500 active:scale-95"
+            className="bg-btn hover:bg-hover rounded-full px-4 py-1 text-black transition duration-300 active:scale-95"
           >
             Sign Up
           </Link>
