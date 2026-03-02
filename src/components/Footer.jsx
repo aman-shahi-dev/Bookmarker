@@ -5,4 +5,4 @@ export const Footer = () => {
       <h1 className="text-[11px] md:text-sm">&copy;2026</h1>
     </div>
   );
-};s
+};
