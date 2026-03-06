@@ -72,7 +72,7 @@ export const Navbar = () => {
           </div>
           <button
             onClick={handleLogout}
-            className="bg-red-op hover:bg-red-op-hover` cursor-pointer rounded-full p-2 select-none active:scale-95"
+            className="bg-red-op hover:bg-red-op-hover cursor-pointer rounded-full p-2 select-none active:scale-95"
           >
             <IconLogout size={24} />
           </button>
