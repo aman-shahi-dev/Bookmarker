@@ -81,30 +81,6 @@ export const GeneratePlaylist = () => {
 
       <hr className="border-neutral-600" />
 
-      <div className="text-xs md:text-md mx-auto w-fit rounded-md rounded-t-none bg-neutral-600 p-2 text-center font-light tracking-wide border-b border-neutral-700 shadow-neutral-700 shadow-xs">
-        Recently created playlists
-      </div>
-      <div className="grid grid-cols-1 gap-4 overflow-y-auto p-4 md:grid-cols-6 md:gap-6 lg:grid-cols-6">
-        {userPlaylists.length > 0 ? (
-          userPlaylists.map((playlist, index) => (
-            <Link
-              to={`/playlist/${playlist.playlistId}`}
-              key={playlist.$id || index}
-            >
-              <PlaylistCard
-                imgSrc={playlist.thumbnail}
-                playlistNumber={index + 1}
-                playlistTitle={playlist.title}
-              />
-            </Link>
-          ))
-        ) : (
-          <div className="col-span-full flex flex-col items-center justify-center py-20 text-neutral-500">
-            <p className="text-xl">No playlists generated yet.</p>
-            <p className="text-sm">Paste a link above to start learning!</p>
-          </div>
-        )}
-      </div>
     </div>
   );
 };

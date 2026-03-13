@@ -5,14 +5,8 @@ export const PlaylistActions = () => {
   return (
     <div className="mt-10 flex flex-col items-center justify-evenly gap-4 md:w-120 md:flex-row">
       <Link
-        to="/generate-playlist"
-        className="flex items-center justify-center gap-2 rounded-full bg-btn px-6 py-4 text-sm font-bold text-black hover:bg-hover active:scale-95 md:text-xl"
-      >
-        <IconPlaylistAdd /> Generate Playlist
-      </Link>
-      <Link
         to="/my-playlists"
-        className="flex items-center justify-center gap-2 rounded-full bg-btn px-6 py-4 text-sm font-bold text-black hover:bg-hover active:scale-95 md:text-xl"
+        className="bg-btn hover:bg-hover flex items-center justify-center gap-2 rounded-full px-6 py-4 text-sm font-bold text-black active:scale-95 md:text-xl"
       >
         <IconPlaylist /> My Playlists
       </Link>

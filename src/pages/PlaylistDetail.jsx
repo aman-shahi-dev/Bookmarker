@@ -35,12 +35,12 @@ export const PlaylistDetail = () => {
   return (
     <div className="flex h-full w-full flex-col">
       <div className="flex items-center justify-between px-4">
-        <h1 className="p-4 text-center text-sm tracking-tight md:text-xl md:w-full">
+        <h1 className="p-4 text-center text-sm tracking-tight md:w-full md:text-xl">
           {playlistName || "Playlist Name"}
         </h1>
         <Link
-          to="/generate-playlist"
-          className="bg-btn hover:bg-hover  rounded-md px-3 py-1 text-black active:scale-95 md:absolute lg:right-40"
+          to="/my-playlists"
+          className="bg-btn hover:bg-hover rounded-md px-3 py-1 text-black active:scale-95 md:absolute lg:right-40"
         >
           Back
         </Link>
