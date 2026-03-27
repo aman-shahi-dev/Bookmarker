@@ -5,6 +5,7 @@ import { logout } from "../store/authSlice";
 import { IconUser, IconLogout } from "@tabler/icons-react";
 import { useEffect, useState } from "react";
 import { useRef } from "react";
+import BookmarkerLogo from "../components/BookmarkerLogo.jsx";
 
 export const Navbar = () => {
   const { status, userData, loading } = useSelector((state) => state.auth);
@@ -38,12 +39,15 @@ export const Navbar = () => {
 
   return (
     <div className="bg-navbar sticky top-0 z-50 flex w-full items-center justify-between gap-6 border-b border-neutral-700 px-4 py-3">
-      <Link to="/" className="text-text text-xl font-bold md:text-2xl">
-        Bookmarker
-      </Link>
+      <div className="flex items-center justify-center gap-2">
+        <BookmarkerLogo className="w-6 md:w-8 lg:w-10" />
+        <Link to="/" className="text-text text-xl font-bold md:text-2xl">
+          Bookmarker
+        </Link>
+      </div>
 
       {loading ? (
-        <div className="h-8 w-24 animate-pulse rounded-full bg-navbar"></div>
+        <div className="bg-navbar h-8 w-24 animate-pulse rounded-full"></div>
       ) : status ? (
         <div className="flex items-center justify-center gap-4">
           <div className="relative" ref={profileDropdownRef}>

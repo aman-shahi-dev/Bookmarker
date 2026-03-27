@@ -59,12 +59,12 @@ export const PlaylistDetail = () => {
                 className="h-full w-full rounded-xl border border-yellow-600 object-cover shadow-2xl shadow-yellow-100"
               />
             </div>
-            <div className="flex flex-1 flex-col items-center justify-evenly p-2 md:p-4">
-              <h1 className="mb-4 truncate text-center text-sm font-bold text-wrap md:mb-6">
+            <div className="flex flex-1 flex-col items-center p-2 md:p-4">
+              <h1 className="mb-4 line-clamp-3 text-center text-sm font-bold wrap-break-word md:mb-6">
                 {video.snippet.title}
               </h1>
               <a
-                className="mx-auto w-fit rounded-full bg-neutral-600 px-3 py-0.5 transition duration-300 hover:bg-neutral-700 active:scale-95"
+                className="mx-auto mt-auto w-fit rounded-full bg-neutral-600 px-3 py-0.5 transition duration-300 hover:bg-neutral-700 active:scale-95"
                 href={`https://youtube.com/watch?v=${video.snippet.resourceId.videoId}`}
                 target="_blank"
               >
