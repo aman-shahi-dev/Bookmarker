@@ -40,7 +40,7 @@ export const Login = () => {
   };
 
   return (
-    <div className="flex w-full max-w-2xl flex-1 flex-col rounded-2xl border border-neutral-700 md:flex-row">
+    <div className="m-6 flex w-full max-w-2xl flex-1 flex-col rounded-2xl border border-neutral-700 md:flex-row">
       <div className="relative w-full md:w-1/2">
         <div className="text-text absolute flex w-full animate-pulse items-center justify-center py-4 text-xl tracking-wide md:py-6 md:text-2xl">
           Login
@@ -48,16 +48,17 @@ export const Login = () => {
         <img
           src="https://images.unsplash.com/photo-1495909617868-3fda03e184ef?q=80&w=1202&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt=""
-          className="h-full w-full rounded-2xl rounded-b-none md:rounded-r-none"
+          className="h-48 w-full rounded-2xl rounded-b-none md:h-full md:rounded-r-none"
         />
       </div>
-      <div className="flex flex-1 flex-col items-center justify-center rounded-2xl rounded-t-none p-4 md:rounded-t-2xl md:rounded-l-none">
-        <h1 className="text-text mb-4 text-lg md:mb-6 md:text-2xl">
+
+      <div className="flex flex-1 flex-col items-center justify-center rounded-2xl rounded-t-none px-4 py-2 md:rounded-t-2xl md:rounded-l-none">
+        <h1 className="text-text mb-3 text-lg md:mb-6 md:text-2xl">
           Fill the details below
         </h1>
         <form
           onSubmit={handleSubmit}
-          className="flex w-full flex-col gap-4 md:gap-6"
+          className="flex w-full flex-col gap-3 md:gap-6"
         >
           <input
             name="email"
@@ -79,7 +80,7 @@ export const Login = () => {
           />
           <button
             type="submit"
-            className="bg-btn hover:bg-hover mx-auto mt-2 w-fit cursor-pointer rounded-full px-6 py-2 text-black transition duration-300 active:scale-95 md:mt-4"
+            className="bg-btn hover:bg-hover mx-auto mt-1 w-fit cursor-pointer rounded-full px-6 py-2 text-black transition duration-300 active:scale-95 md:mt-4"
           >
             {loading ? "Logging in..." : "Login"}
           </button>
@@ -93,27 +94,27 @@ export const Login = () => {
         </div>
 
         {/* OAuth Buttons */}
-        <div className="flex w-full gap-3">
+        <div className="grid w-full grid-cols-3 gap-2">
           <button
             onClick={loginWithGoogle}
-            className="bg-btn hover:bg-hover flex flex-1 cursor-pointer items-center justify-center gap-2 rounded-full px-4 py-2 text-sm text-black transition duration-300 active:scale-95"
+            className="bg-btn hover:bg-hover flex cursor-pointer items-center justify-center gap-1 rounded-full px-2 py-2 text-sm text-black transition duration-300 active:scale-95"
           >
-            <IconBrandGoogle size={18} />
-            Google
+            <IconBrandGoogle size={16} />
+            <span className="hidden sm:inline">Google</span>
           </button>
           <button
             onClick={loginWithGithub}
-            className="bg-btn hover:bg-hover flex flex-1 cursor-pointer items-center justify-center gap-2 rounded-full px-4 py-2 text-sm text-black transition duration-300 active:scale-95"
+            className="bg-btn hover:bg-hover flex cursor-pointer items-center justify-center gap-1 rounded-full px-2 py-2 text-sm text-black transition duration-300 active:scale-95"
           >
-            <IconBrandGithub size={18} />
-            GitHub
+            <IconBrandGithub size={16} />
+            <span className="hidden sm:inline">GitHub</span>
           </button>
           <button
             onClick={loginWithLinkedin}
-            className="bg-btn hover:bg-hover flex flex-1 cursor-pointer items-center justify-center gap-2 rounded-full px-4 py-2 text-sm text-black transition duration-300 active:scale-95"
+            className="bg-btn hover:bg-hover flex cursor-pointer items-center justify-center gap-1 rounded-full px-2 py-2 text-sm text-black transition duration-300 active:scale-95"
           >
-            <IconBrandLinkedin size={18} />
-            LinkedIn
+            <IconBrandLinkedin size={16} />
+            <span className="hidden sm:inline">LinkedIn</span>
           </button>
         </div>
 
