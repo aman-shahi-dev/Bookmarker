@@ -41,7 +41,7 @@ export const Navbar = () => {
     <div className="bg-navbar sticky top-0 z-50 flex w-full items-center justify-between gap-6 border-b border-neutral-700 px-4 py-3">
       <div className="flex items-center justify-center gap-2">
         <BookmarkerLogo className="w-6 md:w-8 lg:w-10" />
-        <Link to="/" className="text-text text-xl font-bold md:text-2xl">
+        <Link to="/" className="text-text text-lg font-bold md:text-2xl">
           Bookmarker
         </Link>
       </div>
@@ -85,13 +85,13 @@ export const Navbar = () => {
         <div className="flex items-center justify-evenly gap-4">
           <Link
             to="/login"
-            className="bg-btn hover:bg-hover rounded-full px-4 py-1 text-black transition duration-300 active:scale-95"
+            className="bg-btn hover:bg-hover rounded-full px-3 py-1 text-sm text-black transition duration-300 active:scale-95 md:text-lg"
           >
             Login
           </Link>
           <Link
             to="/signup"
-            className="bg-btn hover:bg-hover rounded-full px-4 py-1 text-black transition duration-300 active:scale-95"
+            className="bg-btn hover:bg-hover rounded-full px-3 py-1 text-sm text-black transition duration-300 active:scale-95 md:text-lg"
           >
             Sign Up
           </Link>

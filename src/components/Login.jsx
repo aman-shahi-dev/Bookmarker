@@ -40,7 +40,7 @@ export const Login = () => {
   };
 
   return (
-    <div className="m-6 flex w-full max-w-2xl flex-1 flex-col rounded-2xl border border-neutral-700 md:flex-row">
+    <div className="m-6 flex w-full max-w-2xl flex-col rounded-2xl border border-neutral-700 md:min-h-96 md:flex-row">
       <div className="relative w-full md:w-1/2">
         <div className="text-text absolute flex w-full animate-pulse items-center justify-center py-4 text-xl tracking-wide md:py-6 md:text-2xl">
           Login
@@ -48,12 +48,12 @@ export const Login = () => {
         <img
           src="https://images.unsplash.com/photo-1495909617868-3fda03e184ef?q=80&w=1202&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt=""
-          className="h-48 w-full rounded-2xl rounded-b-none md:h-full md:rounded-r-none"
+          className="h-48 w-full rounded-2xl rounded-b-none object-cover md:h-full md:min-h-64 md:rounded-r-none"
         />
       </div>
 
       <div className="flex flex-1 flex-col items-center justify-center rounded-2xl rounded-t-none px-4 py-2 md:rounded-t-2xl md:rounded-l-none">
-        <h1 className="text-text mb-3 text-lg md:mb-6 md:text-2xl">
+        <h1 className="text-text mb-3 text-lg md:mb-6 md:text-2xl mt-1">
           Fill the details below
         </h1>
         <form
@@ -118,8 +118,8 @@ export const Login = () => {
           </button>
         </div>
 
-        <div className="mt-4 flex w-full items-center justify-center gap-4 md:mt-6">
-          <h1 className="text-text text-sm md:text-lg">
+        <div className="mt-3 flex w-full items-center justify-center gap-4 p-1 md:mt-6">
+          <h1 className="text-text text-sm md:text-md">
             Don't have an account?
           </h1>
           <Link
