@@ -57,19 +57,7 @@ export const Home = () => {
     );
 
   return (
-    <div
-      className="flex flex-1 flex-col items-center justify-start bg-[#000000]"
-      style={{
-        backgroundImage: `
-                linear-gradient(#555555 0.1px, transparent 0.5px),
-                linear-gradient(90deg, #555555 0.1px, transparent 0.5px),
-                linear-gradient(#000000, #000000)
-              `,
-        backgroundSize: "50px 50px, 50px 50px",
-        backgroundPosition: "0 0, 0 0",
-        backgroundRepeat: "repeat, repeat",
-      }}
-    >
+    <div className="flex flex-1 flex-col items-center justify-start">
       {status ? (
         <>
           <h1 className="text-text mt-12 mb-6 text-2xl font-bold tracking-tight md:text-6xl">
