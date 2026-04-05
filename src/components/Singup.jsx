@@ -72,7 +72,7 @@ export const Signup = () => {
             type="text"
             placeholder="Name"
             required
-            className="bg-btn/70 w-full rounded-full px-6 py-2 text-black transition duration-300 placeholder:text-black focus:scale-103 focus:shadow-[0px_0px_20px_rgba(255,255,255,1)] focus:outline-none"
+            className="bg-btn/70 w-full rounded-lg px-6 py-2 text-black transition duration-300 placeholder:text-black focus:scale-103 focus:shadow-[0px_0px_20px_rgba(255,255,255,1)] focus:outline-none"
           />
           <input
             name="email"
@@ -81,7 +81,7 @@ export const Signup = () => {
             type="email"
             placeholder="Email"
             required
-            className="bg-btn/70 w-full rounded-full px-6 py-2 text-white transition duration-300 placeholder:text-black focus:scale-103 focus:shadow-[0px_0px_20px_rgba(255,255,255,1)] focus:outline-none"
+            className="bg-btn/70 w-full rounded-lg px-6 py-2 text-white transition duration-300 placeholder:text-black focus:scale-103 focus:shadow-[0px_0px_20px_rgba(255,255,255,1)] focus:outline-none"
           />
           <input
             name="password"
@@ -90,11 +90,11 @@ export const Signup = () => {
             type="password"
             placeholder="Password"
             required
-            className="bg-btn/70 w-full rounded-full px-6 py-2 text-white transition duration-300 placeholder:text-black focus:scale-103 focus:shadow-[0px_0px_20px_rgba(255,255,255,1)] focus:outline-none focus:not-placeholder-shown:font-extrabold"
+            className="bg-btn/70 w-full rounded-lg px-6 py-2 text-white transition duration-300 placeholder:text-black focus:scale-103 focus:shadow-[0px_0px_20px_rgba(255,255,255,1)] focus:outline-none focus:not-placeholder-shown:font-extrabold"
           />
           <button
             type="submit"
-            className="bg-btn hover:bg-hover mx-auto mt-1 w-fit cursor-pointer rounded-full px-6 py-2 text-black transition duration-300 active:scale-95 md:mt-2"
+            className="bg-btn hover:bg-hover mx-auto mt-1 w-fit cursor-pointer rounded-lg px-6 py-2 text-black transition duration-300 active:scale-95 md:mt-2"
           >
             {loading ? "Creating Account..." : "Sign Up"}
           </button>
@@ -111,21 +111,21 @@ export const Signup = () => {
         <div className="grid w-full grid-cols-3 gap-2">
           <button
             onClick={loginWithGoogle}
-            className="bg-btn hover:bg-hover flex cursor-pointer items-center justify-center gap-1 rounded-full px-2 py-2 text-sm text-black transition duration-300 active:scale-95"
+            className="bg-btn hover:bg-hover flex cursor-pointer items-center justify-center gap-1 rounded-lg px-2 py-2 text-sm text-black transition duration-300 active:scale-95"
           >
             <IconBrandGoogle size={16} />
             <span className="hidden sm:inline">Google</span>
           </button>
           <button
             onClick={loginWithGithub}
-            className="bg-btn hover:bg-hover flex cursor-pointer items-center justify-center gap-1 rounded-full px-2 py-2 text-sm text-black transition duration-300 active:scale-95"
+            className="bg-btn hover:bg-hover flex cursor-pointer items-center justify-center gap-1 rounded-lg px-2 py-2 text-sm text-black transition duration-300 active:scale-95"
           >
             <IconBrandGithub size={16} />
             <span className="hidden sm:inline">GitHub</span>
           </button>
           <button
             onClick={loginWithLinkedin}
-            className="bg-btn hover:bg-hover flex cursor-pointer items-center justify-center gap-1 rounded-full px-2 py-2 text-sm text-black transition duration-300 active:scale-95"
+            className="bg-btn hover:bg-hover flex cursor-pointer items-center justify-center gap-1 rounded-lg px-2 py-2 text-sm text-black transition duration-300 active:scale-95"
           >
             <IconBrandLinkedin size={16} />
             <span className="hidden sm:inline">LinkedIn</span>
@@ -138,7 +138,7 @@ export const Signup = () => {
           </h1>
           <Link
             to="/login"
-            className="bg-btn hover:bg-hover rounded-full px-4 py-2 text-sm text-black transition duration-300 active:scale-95"
+            className="bg-btn hover:bg-hover rounded-lg px-4 py-2 text-sm text-black transition duration-300 active:scale-95"
           >
             Login
           </Link>

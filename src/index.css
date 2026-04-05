@@ -25,7 +25,7 @@
   /* Buttons & Interactions */
   --color-btn: #ffffff; /* Slate blue for secondary/glass feel */
   --color-btn-primary: #38bdf8; /* Optional sky blue for "Sign Up" pop */
-  --color-hover: #475569;
+  --color-hover: #bbbbbb;
 
   /* Utility / Borders */
   --color-glass-border: rgba(255, 255, 255, 0.1);
@@ -38,6 +38,6 @@
   --color-navbar: #0f172a;
   --color-text-primary: #f8fafc;
   --color-text-secondary: #cbd5e1;
-  --color-btn: #1e293b;
-  --color-hover: #334155;
+  --color-btn: #ffffff;
+  --color-hover: #bbbbbb;
 }
