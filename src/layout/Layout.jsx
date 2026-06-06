@@ -24,10 +24,10 @@ export const Layout = () => {
       <Navbar />
       <main className="flex flex-1 flex-col overflow-hidden">
         <div className="pointer-events-none fixed inset-0 overflow-hidden">
-          <div className="absolute -top-32 -left-32 h-60 w-60 rounded-full bg-white/40 blur-[150px]" />
-          <div className="absolute -top-32 -right-32 h-60 w-60 rounded-full bg-white/40 blur-[150px]" />
-          <div className="absolute -bottom-32 -left-32 h-60 w-60 rounded-full bg-white/40 blur-[150px]" />
-          <div className="absolute -right-32 -bottom-32 h-60 w-60 rounded-full bg-white/40 blur-[150px]" />
+          <div className="absolute -top-32 -left-32 h-60 w-90 rounded-full bg-white/40 blur-[150px]" />
+          <div className="absolute -top-32 -right-32 h-60 w-90 rounded-full bg-white/40 blur-[150px]" />
+          <div className="absolute -bottom-32 -left-32 h-60 w-90 rounded-full bg-white/40 blur-[150px]" />
+          <div className="absolute -right-32 -bottom-32 h-60 w-90 rounded-full bg-white/40 blur-[150px]" />
         </div>
         <Outlet />
       </main>

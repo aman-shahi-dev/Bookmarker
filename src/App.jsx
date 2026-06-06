@@ -23,8 +23,10 @@ export const App = () => {
 
   if (loading) {
     return (
-      <div className="text-text fixed inset-0 flex h-screen w-screen items-center justify-center bg-[#1A1A1A]">
-        <h1 className="flex animate-pulse text-2xl md:text-4xl">Loading...</h1>
+      <div className="fixed inset-0 flex h-screen w-screen items-center justify-center bg-black">
+        <h1 className="flex animate-pulse text-center text-2xl text-white md:text-4xl">
+          Loading...
+        </h1>
       </div>
     );
   }

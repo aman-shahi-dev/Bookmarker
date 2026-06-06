@@ -31,4 +31,19 @@ export const playlistService = {
       [Query.equal("userId", userId)],
     );
   },
+  updatePlaylist: async function (documentId, data) {
+    return await databases.updateDocument(
+      config.appwrite_database_id,
+      config.appwrite_playlists_collection_id,
+      documentId,
+      data,
+    );
+  },
+  deletePlaylist: async function (documentId) {
+    return await databases.deleteDocument(
+      config.appwrite_database_id,
+      config.appwrite_playlists_collection_id,
+      documentId,
+    );
+  },
 };

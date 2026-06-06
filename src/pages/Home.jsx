@@ -51,9 +51,11 @@ export const Home = () => {
 
   if (loading)
     return (
-      <h1 className="flex flex-1 animate-pulse flex-col items-center justify-center bg-black text-2xl text-white md:text-4xl">
-        Loading...
-      </h1>
+      <div className="flex w-full mt-32 items-center justify-center">
+        <h1 className="animate-pulse text-center text-2xl text-white md:text-4xl">
+          Loading...
+        </h1>
+      </div>
     );
 
   return (
@@ -107,3 +109,4 @@ export const Home = () => {
     </div>
   );
 };
+

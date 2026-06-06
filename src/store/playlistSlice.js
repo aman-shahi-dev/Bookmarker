@@ -66,6 +66,22 @@ export const fetchPlaylistVideos = createAsyncThunk(
   },
 );
 
+export const updatePlaylistThunk = createAsyncThunk(
+  "playlists/updatePlaylist",
+  async ({ documentId, data }) => {
+    const response = await playlistService.updatePlaylist(documentId, data);
+    return response;
+  },
+);
+
+export const deletePlaylistThunk = createAsyncThunk(
+  "playlists/deletePlaylist",
+  async (documentId) => {
+    await playlistService.deletePlaylist(documentId);
+    return documentId;
+  },
+);
+
 const playlistSlice = createSlice({
   name: "playlists",
   initialState,
@@ -109,6 +125,15 @@ const playlistSlice = createSlice({
       .addCase(fetchPlaylistVideos.rejected, (state, action) => {
         state.loading = false;
         state.error = action.payload;
+      })
+      .addCase(updatePlaylistThunk.fulfilled, (state, action) => {
+        const index = state.userPlaylists.findIndex((p) => p.$id === action.payload.$id);
+        if (index !== -1) {
+          state.userPlaylists[index] = action.payload;
+        }
+      })
+      .addCase(deletePlaylistThunk.fulfilled, (state, action) => {
+        state.userPlaylists = state.userPlaylists.filter((p) => p.$id !== action.payload);
       });
   },
 });
